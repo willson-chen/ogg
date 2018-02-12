@@ -15,3 +15,11 @@ script:
   - if [[ "$BUILD" == "CMAKE" ]] ; then cmake --build . ; fi
   - if [[ "$BUILD" == "CMAKE" ]] ; then cmake --build . --target install ; fi
   - if [[ "$BUILD" == "CMAKE" ]] ; then popd ; fi
+
+os:
+- linux
+- osx
+
+compiler:
+- gcc
+- clang
